@@ -7,7 +7,7 @@ public class NumTriangles{
 //$ $ $ $ $
 //$ $ $ $ $ $
 public static void triangleBLInput(String input){
-    for (int row=1; row <= 5; row++) {
+    for (int row=1; row <= 6; row++) {
         for (int column = 1; column <= row; column++) {
             System.out.print("$");
         }
@@ -24,7 +24,7 @@ public static void triangleBLInput(String input){
 public static void triangleTLMultiplier(){
     for (int row=5; row > 0; row--) {
         for (int column = row; column > 0; column--) {
-            System.out.print(row*2);
+            System.out.print(row + 6);
         }
         System.out.println();
     }
@@ -54,7 +54,7 @@ public static void triangleBR(){
 public static void upsideDownPyramid(){
     for (int row=5; row > 0; row--) {
         for (int column = row; column > 0; column--) {
-            System.out.print(row);
+            System.out.print(row + " ");
         }
         System.out.println();
     }
