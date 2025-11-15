@@ -65,7 +65,7 @@ public static void upsideDownPyramid(){
         for (int num = row; num <= size; num++) {
             System.out.print(num + " ");
         }
-        for (int num = size -1; num >= row; num--) {
+        for (int num = size - 1; num >= row; num--) {
             System.out.print(num + " ");
         }
         System.out.println();
