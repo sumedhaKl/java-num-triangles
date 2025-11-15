@@ -44,7 +44,7 @@ public static void triangleBR(){
             System.out.print(" ");
         }
         for (int num = row; num >= 1; num--) {
-            System.out.print(num + " ");
+            System.out.print(" " + num);
         }
         System.out.println();
     }
