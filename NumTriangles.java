@@ -41,10 +41,10 @@ public static void triangleBR(){
     int size = 6;
     for (int row=1; row <= size; row++) {
         for (int space = 1; space <= size - row; space++) {
-            System.out.print(" ");
+            System.out.print("  ");
         }
         for (int num = row; num >= 1; num--) {
-            System.out.print(" " + num);
+            System.out.print(num + " ");
         }
         System.out.println();
     }
