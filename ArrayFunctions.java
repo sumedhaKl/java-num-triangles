@@ -11,7 +11,6 @@ public class ArrayFunctions {
     public static int[] printEvens(int[] inputNums) {
         int[] printEvens = new int[inputNums.length];
         int evenCount = 0;
-
         for (int num : inputNums) {
             if (num % 2 == 0) {
                 printEvens[evenCount] = num;
@@ -30,9 +29,11 @@ public class ArrayFunctions {
     public static void main(String[] args) {
     String[] testArr = newArray(4, "test");
     System.out.println(Arrays.toString(testArr));
-    int[] originalNumsForEvens = {1, 2, 3, 4, 5, 6};
+
+    int[] originalNumsForEvens = {1, 2, 2, 3, 5, 6, 6, 6};
     int[] result = printEvens(originalNumsForEvens);
     System.out.println(Arrays.toString(result));
+    
     int[] nums = {1, 2, 3};
     int[] resizedNums = resizeArray(nums);
     System.out.println(Arrays.toString(resizedNums));
