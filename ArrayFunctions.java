@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ArrayFunctions {
+public class MyClass {
     public static String[] newArray(int size, String fillString) {
         String[] newArray = new String[size];
         for (int i = 0; i < size; i++) {
@@ -21,10 +21,20 @@ public class ArrayFunctions {
         }
         return Arrays.copyOf(printEvens, evenCount);
     }
+    public static int[] resizeArray(int[] originalArray) {
+        int[] newArray = new int[originalArray.length * 2];
+        for (int i = 0; i < originalArray.length; i++) {
+            newArray[i] = originalArray[i];
+        }
+        return newArray;
+    }
     public static void main(String[] args) {
     String[] testArr = newArray(4, "test");
     System.out.println(Arrays.toString(testArr));
     int[] result = printEvens();
     System.out.println(Arrays.toString(result));
+    int[] nums = {1, 2, 3};
+    int[] resizedNums = resizeArray(nums);
+    System.out.println(Arrays.toString(resizedNums));
     }
 }
