@@ -30,10 +30,10 @@ public class ArrayFunctions {
     String[] testArr = newArray(4, "test");
     System.out.println(Arrays.toString(testArr));
 
-    int[] originalNumsForEvens = {1, 2, 2, 3, 5, 6, 6, 6};
+    int[] originalNumsForEvens = {2, 2, 6, 6, 6};
     int[] result = printEvens(originalNumsForEvens);
     System.out.println(Arrays.toString(result));
-    
+
     int[] nums = {1, 2, 3};
     int[] resizedNums = resizeArray(nums);
     System.out.println(Arrays.toString(resizedNums));
