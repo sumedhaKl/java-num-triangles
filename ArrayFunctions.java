@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class MyClass {
+public class ArrayFunctions {
     public static String[] newArray(int size, String fillString) {
         String[] newArray = new String[size];
         for (int i = 0; i < size; i++) {
