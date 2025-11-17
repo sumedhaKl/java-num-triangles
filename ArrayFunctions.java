@@ -30,8 +30,8 @@ public class ArrayFunctions {
     String[] testArr = newArray(4, "test");
     System.out.println(Arrays.toString(testArr));
 
-    int[] inputNums = {2, 2, 6, 6, 6, 1, 3, 5};
-    int[] result = printEvens(inputNums);
+    int[] newNums = {2, 2, 6, 6, 6, 1, 3, 5};
+    int[] result = printEvens(newNums);
     System.out.println(Arrays.toString(result));
 
     int[] nums = {1, 2, 3};
