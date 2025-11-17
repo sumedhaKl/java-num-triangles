@@ -8,16 +8,14 @@ public class ArrayFunctions {
         }
         return newArray;
     }
-    public static int[] printEvens(int[] inputNums) {
-        int[] printEvens = new int[inputNums.length];
-        int evenCount = 0;
+    public static void printEvens(int[] inputNums) {
+        StringBuilder sb = new StringBuilder();
         for (int num : inputNums) {
             if (num % 2 == 0) {
-                printEvens[evenCount] = num;
-                evenCount++;
+                sb.append(num);
             }
         }
-        return Arrays.copyOf(printEvens, evenCount);
+        System.out.println(sb.toString());
     }
     public static int[] resizeArray(int[] originalArray) {
         int[] newArray = new int[originalArray.length * 2];
@@ -31,8 +29,7 @@ public class ArrayFunctions {
     System.out.println(Arrays.toString(testArr));
 
     int[] newNums = {2, 2, 6, 6, 6, 1, 3, 5};
-    int[] result = printEvens(newNums);
-    System.out.println(Arrays.toString(result));
+    printEvens(newNums);
 
     int[] nums = {1, 2, 3};
     int[] resizedNums = resizeArray(nums);
