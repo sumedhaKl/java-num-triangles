@@ -28,7 +28,7 @@ public class ArrayFunctions {
     String[] testArr = newArray(4, "test");
     System.out.println(Arrays.toString(testArr));
 
-    int[] newNums = {2, 2, 6, 6, 6, 1, 3, 5};
+    int[] newNums = {2,2,6,6,6,1,3,5};
     printEvens(newNums);
 
     int[] nums = {1, 2, 3};
